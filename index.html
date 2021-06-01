@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finance Calculator</title>
+    <link rel="stylesheet" href="/style/style.css" />    
+  </head>
+  <body>
+    <div class="Container">
+      <div class="wrap">
+        <h1>Finance Calculator</h1>          
+        <div class="wrap1">
+          <div>
+            <!-- <label for="name">Name :</label> -->
+            <input id="Name" type="text" name="name" placeholder="Enter your name" required/>
+          </div>
+          <div>
+            <!-- <label for="name">Enter Showroom Price :</label> -->
+            <input id="Showroom_Price" type="text" name="name" placeholder="Enter Showroom Price" required/>
+          </div>
+          <div>
+            <!-- <label for="name">Enter Downpayment Percentage :</label> -->
+            <input id="DP_Percentage" type="text" name="name" placeholder="Enter Downpayment Percentage" required/>
+          </div>
+          <div class="display_result">
+              <h2 id="display"></h2>
+          </div>
+        </div>        
+        <button class="check_button">Check</button>
+        <div class="side_card">
+          <h2>Calculation Type</h2>
+        <select onchange="SelectMenu()" id="Menu_list">
+          <option value="Downpayment">Downpayment</option>
+          <option value="Balance">Balance</option>
+          <option value="Interest amount">Interest amount</option>
+          <option value="Total Finance amount">Total Finance amount</option>
+          <option value="EMI">EMI</option>
+        </select>
+      </div>        
+      </div>      
+    </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
